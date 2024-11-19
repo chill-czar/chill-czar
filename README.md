@@ -15,7 +15,7 @@
 
 - ⚡ Fun fact **I am egoistic**
 - # Technology Stack
-- 
+  
 ## Frontend Technologies 🌐
 - **Next.js** ⚛️
 - **React** ⚛️
