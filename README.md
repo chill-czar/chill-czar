@@ -34,4 +34,12 @@
 ## Authentication 🔐
 - **Clerk** 👤
 
+  ## Recent Activity
+
+- 📝 Updated [pingpanda](https://github.com/chill-czar/pingpanda) with new features
+- 🔄 Refactored [employee-management-system](https://github.com/chill-czar/employee-management-system)
+- ⏳ Pushed changes to [chill-czar](https://github.com/chill-czar/chill-czar)
+- 🔍 Contributed to [GitBoard](https://github.com/chill-czar/GitBoard)
+- 📃 Committed to [google-drive-clone](https://github.com/chill-czar/google-drive-clone)
+
 
