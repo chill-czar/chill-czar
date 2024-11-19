@@ -13,24 +13,23 @@
 
 - ⚡ Fun fact **I am egoistic**
 - # Technology Stack
-
-## Frontend 🌐
+- 
+## Frontend Technologies 🌐
 - **Next.js** ⚛️
 - **React** ⚛️
-- **Tailwind CSS** 🎨
-- **Framer Motion** 🎞️
-- **Lucide React** 🖼️
-- **React Hook Form** 📝
-- **React Syntax Highlighter** 💻
-- **Radix UI** ⚙️
+- **TypeScript** 🔷
+- **JavaScript** 🟡
+- **Redux** 📦
+- **Tailwind CSS** 🌊
 
-## Backend ⚙️
-- **Prisma** 📦
-- **Neon** ☁️
-- **Upstash Redis** 🗄️
-- **Hono** 🚀
-- **SuperJSON** 🥤
-- **Zod** ✅
+## Backend Technologies ⚙️
+- **Node.js** 🟢
+- **Express.js** 🚀
+- **GraphQL** 📊
+
+## Database Technologies 🗄️
+- **MongoDB** 🍃
+- **PostgreSQL** 🐘
 
 ## Authentication 🔐
 - **Clerk** 👤
