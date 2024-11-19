@@ -47,5 +47,5 @@
 🔹 **Followers:** 4  
 🔹 **Following:** 16  
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=chill-czar&show_icons=true&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=chill-czar&show_icons=true&theme=radical)            
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chill-czar&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
