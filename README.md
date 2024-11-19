@@ -12,13 +12,27 @@
 - 📄 Know about my experiences [[RESUME](https://docs.google.com/document/d/1b13eRe799Kx1FjV_m4-RIS_v8ub9XXutojPEx_zHFHg/edit?usp=sharing)]
 
 - ⚡ Fun fact **I am egoistic**
+- # Technology Stack
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+## Frontend 🌐
+- **Next.js** ⚛️
+- **React** ⚛️
+- **Tailwind CSS** 🎨
+- **Framer Motion** 🎞️
+- **Lucide React** 🖼️
+- **React Hook Form** 📝
+- **React Syntax Highlighter** 💻
+- **Radix UI** ⚙️
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=chill-czar&show_icons=true&locale=en&layout=compact" alt="chill-czar" /></p>
+## Backend ⚙️
+- **Prisma** 📦
+- **Neon** ☁️
+- **Upstash Redis** 🗄️
+- **Hono** 🚀
+- **SuperJSON** 🥤
+- **Zod** ✅
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=chill-czar&show_icons=true&locale=en" alt="chill-czar" /></p>
+## Authentication 🔐
+- **Clerk** 👤
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=chill-czar&" alt="chill-czar" /></p>
+
