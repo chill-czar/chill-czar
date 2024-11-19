@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Sarthak Chaudhari</h1>
 <h3 align="center">A passionate Full Stack Devloper from India</h3>
-
+[![trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma)](https://github.com/ryo-ma/github-profile-trophy)
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=chill-czar&label=Profile%20views&color=0e75b6&style=flat" alt="chill-czar" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=chill-czar" alt="chill-czar" /></a> </p>
