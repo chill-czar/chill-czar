@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Sarthak Chaudhari</h1>
 <h3 align="center">I am a Full Stack Developer skilled in creating dynamic web applications. I focus on delivering seamless user experiences and efficient server-side solutions.
-
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=chill-czar&label=Profile%20views&color=0e75b6&style=flat" alt="chill-czar" /> </p>
 </h3>
 
 - 🔭 I’m currently  developing [Ping Panda](https://github.com/chill-czar/pingpanda), a SaaS solution that enables other platforms to send real-time notifications of critical events, like sales and purchases, directly to users' Discord DMs. The tech stack includes Next.js, React, Prisma, and Upstash Redis for a seamless full-stack experience. Key features include user management, real-time alerts, interactive dashboards, and efficient database handling. With a focus on performance and type safety, Ping Panda ensures timely communication and enhanced user engagement
