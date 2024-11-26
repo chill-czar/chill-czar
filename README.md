@@ -60,7 +60,3 @@ A modern, secure real-time chat app with sleek design and a smooth user experien
 
 ### 📊 GitHub Stats
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chill-czar&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats) ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=chill-czar&show_icons=true&theme=radical)
-
----
-
-Feel free to use this README for showcasing your skills and projects in an engaging and optimized format!
