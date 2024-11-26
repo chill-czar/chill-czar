@@ -26,6 +26,7 @@
 - ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat)
 - ![Redux](https://img.shields.io/badge/-Redux-764ABC?logo=redux&logoColor=white&style=flat)
 - ![Zustand](https://img.shields.io/badge/-Zustand-000000?style=flat)
+- ![Zod](https://img.shields.io/badge/-Zod-20C997?style=flat)
 
 #### ⚙️ Backend Technologies
 - ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=flat)
@@ -52,10 +53,44 @@
 
 ---
 
+### 📘 Latest Project: [Real-Time Chat Application]()
+#### 🌟 **Description**
+A full-stack real-time chat application built using **MERN stack**, providing a seamless and secure user experience for real-time communication.
+
+#### ⚙️ **Tech Stack**
+- **Frontend:** React, Next.js, TailwindCSS, DaisyUI, Zod, Socket.io  
+- **Backend:** Node.js, Express.js, MongoDB, Socket.io  
+- **Authentication:** JWT, Clerk, bcrypt, cookie-parser  
+- **Cloud Services:** Cloudinary for image uploads  
+
+#### ✨ **Key Functionalities**
+1. **User Authentication:**
+   - Sign Up, Login, Logout with secure JWT-based session management.
+   - Password hashing with bcrypt for secure password storage.
+
+2. **Profile Management:**
+   - Update profile information and upload profile pictures via Cloudinary.
+
+3. **Real-Time Messaging:**
+   - Real-time sending and receiving of text and image messages.
+   - Message notifications and real-time online user updates.
+
+4. **User Interface:**
+   - Responsive, modern design with TailwindCSS and DaisyUI.
+   - Toast notifications for user feedback.
+
+5. **Security and Error Handling:**
+   - CORS configuration for secure cross-origin communication.
+   - Client-side and server-side validation with meaningful error feedback.
+
+This project demonstrates a robust real-time chat solution with modern design, secure architecture, and exceptional user experience.
+
+---
+
 ### 📊 GitHub Stats
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chill-czar&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats)  
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=chill-czar&show_icons=true&theme=radical)
 
 ---
 
-Feel free to use this for your GitHub profile. It's optimized for clarity, readability, and visual appeal!
+Feel free to use this README for showcasing your skills and projects in an engaging and optimized format!
