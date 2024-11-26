@@ -53,7 +53,7 @@
 
 ---
 
-### 📘 Latest Project: [Real-Time Chat Application]()
+### 📘 Latest Project: [Real-Time Chat Application](https://github.com/chill-czar/real-time-chat-app)
 #### 🌟 **Description**
 A full-stack real-time chat application built using **MERN stack**, providing a seamless and secure user experience for real-time communication.
 
@@ -88,8 +88,7 @@ This project demonstrates a robust real-time chat solution with modern design, s
 ---
 
 ### 📊 GitHub Stats
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chill-czar&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats)  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=chill-czar&show_icons=true&theme=radical)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chill-czar&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats) ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=chill-czar&show_icons=true&theme=radical)
 
 ---
 
