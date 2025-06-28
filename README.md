@@ -34,6 +34,3 @@ console.log("am i even real?");
 
 ---
 
-<p align="center">
-  <img src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" width="300" alt="glitch"/>
-</p>
