@@ -1,36 +1,57 @@
-## 👤 Jimmy
+# 👋 Hi, I'm Sarthak Chaudhari  
 
-just a shell writing code between episodes of delusion and existential collapse.
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?lines=dev+by+day%2C+possessed+by+night.;console.log(%22am+i+even+real%22%3F)&center=true&width=500&height=50">
-</p>
+💻 **Full Stack Developer** specializing in **Next.js, React.js, and TypeScript**.  
+⚡ Familiar with **DevOps, system design, and AI tools**, with experience in building **scalable, high-performance applications**.  
 
 ---
 
-### 🧠 Madness isn’t a bug, it’s the feature.
-
-### 🖤 idiot. fool. broken. burden.
-
-i debug reality like it's spaghetti code — still ends in regret.
-
-### 😈 villain-coded. psycho-scripted. liar-compiled.
-
-pull requests closed. trust issues open.
-
-### 💔 numb fingers. obsessive commits.
-
-in love with the idea of being loved, abandoned by every repo.
-
-### ⚰️ nothing inside but function calls and screaming.
-
-dev by day, possessed by night.
-
-```js
-console.log("am i even real?");
-```
-
-> don’t follow me. i’m already lost.
+## 🚀 About Me  
+- 🔹 Passionate about **frontend-first full-stack development**.  
+- 🔹 Experienced in **real-time collaboration platforms, cloud pipelines, and AI-powered tools**.  
+- 🔹 Constantly exploring **scalable system architectures** and modern **DevOps workflows**.  
 
 ---
 
+## 🛠️ Tech Stack  
+
+**Frontend**: Next.js, React.js, Redux, TanStack Query, Tailwind CSS  
+**Backend**: Node.js, Express.js, Socket.io  
+**Databases**: MongoDB, Prisma, Mongoose, Convex, Redis  
+**Cloud & DevOps**: AWS (S3, SQS, ECS, CloudFront, Route53, ECR), Docker, Nginx, CI/CD, Linux  
+**AI/Other Tools**: LangChain, LangGraph, Clerk, Groq  
+
+---
+
+## 📌 Featured Projects  
+
+### 🔹 [Collabify](https://github.com/yourusername/collabify) – End-to-End Project Management Tool  
+- Built a **Notion-style workspace** with file manager & Excalidraw integration.  
+- Implemented **real-time collaboration** with Convex & Redux.  
+- Integrated **secure authentication** (Clerk) & **AWS S3 storage**.  
+
+### 🔹 [Streams](https://github.com/yourusername/streams) – Video Transcoding & Streaming Pipeline  
+- Designed a **scalable video pipeline** with AWS ECS + SQS.  
+- Delivered **HLS adaptive streaming** via Video.js player.  
+- Managed structured **S3 storage & metadata** for multi-resolution playback.  
+
+### 🔹 [ExcalidrawAI](https://github.com/yourusername/excalidraw-ai) – AI-Powered Diagram Generator  
+- Built an **AI-assisted diagramming tool** with LangChain + Groq.  
+- Automated **flowchart generation** from natural language prompts.  
+- Enabled **real-time rendering** using Redux.  
+
+---
+
+## 🎓 Education  
+**Jawahar Navodaya Vidyalaya (JNV), Akkalkuwa, Maharashtra**  
+Higher Secondary (12th) – 2023  
+
+---
+
+## 🌐 Connect With Me  
+📧 Email: aisarthak2@gmail.com  
+💼 [LinkedIn](https://linkedin.com/in/yourusername)  
+🌍 [Portfolio](https://yourportfolio.com)  
+🐦 [Twitter](https://twitter.com/yourusername)  
+
+---
+✨ *Always open to collaboration, new opportunities, and exciting projects!*  
