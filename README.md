@@ -24,17 +24,17 @@
 
 ## 📌 Featured Projects  
 
-### 🔹 [Collabify](https://github.com/yourusername/collabify) – End-to-End Project Management Tool  
+### 🔹 [Collabify](https://github.com/chill-czar/Collabify) – End-to-End Project Management Tool  
 - Built a **Notion-style workspace** with file manager & Excalidraw integration.  
 - Implemented **real-time collaboration** with Convex & Redux.  
 - Integrated **secure authentication** (Clerk) & **AWS S3 storage**.  
 
-### 🔹 [Streams](https://github.com/yourusername/streams) – Video Transcoding & Streaming Pipeline  
+### 🔹 [Streams](https://github.com/chill-czar/streams) – Video Transcoding & Streaming Pipeline  
 - Designed a **scalable video pipeline** with AWS ECS + SQS.  
 - Delivered **HLS adaptive streaming** via Video.js player.  
 - Managed structured **S3 storage & metadata** for multi-resolution playback.  
 
-### 🔹 [ExcalidrawAI](https://github.com/yourusername/excalidraw-ai) – AI-Powered Diagram Generator  
+### 🔹 [ExcalidrawAI](https://github.com/chill-czar/ExcalidrawAi) – AI-Powered Diagram Generator  
 - Built an **AI-assisted diagramming tool** with LangChain + Groq.  
 - Automated **flowchart generation** from natural language prompts.  
 - Enabled **real-time rendering** using Redux.  
@@ -49,9 +49,9 @@ Higher Secondary (12th) – 2023
 
 ## 🌐 Connect With Me  
 📧 Email: aisarthak2@gmail.com  
-💼 [LinkedIn](https://linkedin.com/in/yourusername)  
-🌍 [Portfolio](https://yourportfolio.com)  
-🐦 [Twitter](https://twitter.com/yourusername)  
+💼 [LinkedIn](https://www.linkedin.com/in/its-sarthak-chaudhari)  
+🌍 [Portfolio](https://chill-czar.github.io/new-portfolio)  
+🐦 [Twitter](https://twitter.com/chill_czar)  
 
 ---
 ✨ *Always open to collaboration, new opportunities, and exciting projects!*  
