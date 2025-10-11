@@ -1,57 +1,94 @@
-# 👋 Hi, I'm Sarthak Chaudhari  
+# Konichiwa 👋
 
-💻 **Full Stack Developer** specializing in **Next.js, React.js, and TypeScript**.  
-⚡ Familiar with **DevOps, system design, and AI tools**, with experience in building **scalable, high-performance applications**.  
+<div align="center">
+<img height="300" width="700" alt="GIF" src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/techwave.gif">
+</div>
 
----
+</br>
+</br>
 
-## 🚀 About Me  
-- 🔹 Passionate about **frontend-first full-stack development**.  
-- 🔹 Experienced in **real-time collaboration platforms, cloud pipelines, and AI-powered tools**.  
-- 🔹 Constantly exploring **scalable system architectures** and modern **DevOps workflows**.  
+# About Me 💬
 
----
+### - I'm 20 years old, a **Full-Stack Developer & AI Enthusiast** from India.  
 
-## 🛠️ Tech Stack  
+<img height="400" width="500" alt="GIF" align="right" src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/ai-coding.gif">
 
-**Frontend**: Next.js, React.js, Redux, TanStack Query, Tailwind CSS  
-**Backend**: Node.js, Express.js, Socket.io  
-**Databases**: MongoDB, Prisma, Mongoose, Convex, Redis  
-**Cloud & DevOps**: AWS (S3, SQS, ECS, CloudFront, Route53, ECR), Docker, Nginx, CI/CD, Linux  
-**AI/Other Tools**: LangChain, LangGraph, Clerk, Groq  
+### - Learning:
+- ✨ LangChain & LangGraph  
+- ✨ Advanced System Design & Scalable Architectures  
 
----
-
-## 📌 Featured Projects  
-
-### 🔹 [Collabify](https://github.com/chill-czar/Collabify) – End-to-End Project Management Tool  
-- Built a **Notion-style workspace** with file manager & Excalidraw integration.  
-- Implemented **real-time collaboration** with Convex & Redux.  
-- Integrated **secure authentication** (Clerk) & **AWS S3 storage**.  
-
-### 🔹 [Streams](https://github.com/chill-czar/streams) – Video Transcoding & Streaming Pipeline  
-- Designed a **scalable video pipeline** with AWS ECS + SQS.  
-- Delivered **HLS adaptive streaming** via Video.js player.  
-- Managed structured **S3 storage & metadata** for multi-resolution playback.  
-
-### 🔹 [ExcalidrawAI](https://github.com/chill-czar/ExcalidrawAi) – AI-Powered Diagram Generator  
-- Built an **AI-assisted diagramming tool** with LangChain + Groq.  
-- Automated **flowchart generation** from natural language prompts.  
-- Enabled **real-time rendering** using Redux.  
+### - Hobbies:
+- ✨ Reading  
+- ✨ Watching Anime  
 
 ---
 
-## 🎓 Education  
-**Jawahar Navodaya Vidyalaya (JNV), Akkalkuwa, Maharashtra**  
-Higher Secondary (12th) – 2023  
+# Languages & Tools 👨‍💻 🛠
+
+<p align="center">
+
+<img src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/icons/typescript.png" alt="TypeScript" width="120" height="50">  
+<img src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/icons/javascript.png" alt="JavaScript" width="100" height="50">  
+<img src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/icons/nextjs.png" alt="Next.js" width="100" height="50">  
+<img src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/icons/react.png" alt="React" width="100" height="50">  
+<img src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/icons/nodejs.png" alt="Node.js" width="100" height="50">  
+<img src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/icons/mongodb.png" alt="MongoDB" width="120" height="50">  
+<img src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/icons/aws.png" alt="AWS" width="150" height="50">  
+<img src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/icons/langchain.png" alt="LangChain" width="120" height="50">  
+<img src="https://github.com/chill-czar/chill-czar-assets/blob/main/assets/icons/langgraph.png" alt="LangGraph" width="120" height="50">  
+
+</p>
 
 ---
 
-## 🌐 Connect With Me  
-📧 Email: aisarthak2@gmail.com  
-💼 [LinkedIn](https://www.linkedin.com/in/its-sarthak-chaudhari)  
-🌍 [Portfolio](https://chill-czar.github.io/new-portfolio)  
-🐦 [Twitter](https://twitter.com/chill_czar)  
+# Featured Projects 🚀
+
+### 🔹 [Collabify](https://github.com/chill-czar/Collabify) – End-to-End Project Management Tool
+- Notion-style workspace with **file management** & Excalidraw integration.  
+- **Real-time collaboration** using Convex & Redux.  
+- **Secure authentication** with Clerk & cloud storage via AWS S3.  
+
+### 🔹 [Streams](https://github.com/chill-czar/streams) – Video Transcoding & Streaming Pipeline
+- Scalable **video processing pipeline** with AWS ECS + SQS.  
+- **HLS adaptive streaming** for multiple resolutions.  
+- Managed **structured S3 storage & metadata**.  
+
+### 🔹 [ExcalidrawAI](https://github.com/chill-czar/ExcalidrawAi) – AI-Powered Diagram Generator
+- **AI-assisted diagramming** using LangChain + Groq.  
+- Automated **flowchart generation from natural language**.  
+- Real-time rendering & collaborative editing via Redux.  
 
 ---
-✨ *Always open to collaboration, new opportunities, and exciting projects!*  
+
+# Contact Me ✉️  
+
+<p>
+If you want to reach out for **collaboration, projects, or just chat**, ping me anytime 😉.  
+
+<a href="mailto:aisarthak2@gmail.com">
+  <img align="left" alt="Gmail" width="130" height="100" src="https://github.com/Xx-Ashutosh-xX/Xx-Ashutosh-xX/blob/master/assets/icons/gmail.png" />
+</a>
+<a href="https://www.linkedin.com/in/its-sarthak-chaudhari">
+  <img align="left" alt="LinkedIn" width="150" height="100" src="https://github.com/Xx-Ashutosh-xX/Xx-Ashutosh-xX/blob/master/assets/icons/linkedin.png" />
+</a>
+<a href="https://x.com/chill_czar">
+  <img align="left" alt="X / Twitter" width="130" height="100" src="https://github.com/Xx-Ashutosh-xX/Xx-Ashutosh-xX/blob/master/assets/icons/twitter.png" />
+</a>
+<a href="https://chill-czar.github.io/new-portfolio/">
+  <img align="left" alt="Portfolio" width="130" height="100" src="https://github.com/Xx-Ashutosh-xX/Xx-Ashutosh-xX/blob/master/assets/icons/portfolio.png" />
+</a>
+</p>
+
+</br>
+</br>
+</br>
+
+<p align="center">  
+  <a href="https://github.com/anuraghazra/github-readme-stats"> 
+<img src="https://github-readme-stats.vercel.app/api?username=chill-czar&show_icons=true&theme=radical"/>
+  </a>
+</p>
+
+---
+
+✨ *Always exploring, building, and open to exciting projects!*
