@@ -1,72 +1,61 @@
 # Jimmy 👋
 
 <div align="center">
-<img height="300" width="700" alt="GIF" src="https://github.com/chill-czar/chill-czar/blob/main/assets/techwave.gif">
+<img height="300" width="700" alt="GIF" align="center" src="https://github.com/chill-czar/chill-czar/blob/main/assets/208593.gif">
 </div>
 
+</br>
 </br>
 </br>
 
 # About Me 💬
 
-### - I'm 20 years old, a **Full-Stack Developer & AI Enthusiast** from India.  
+### - I'm 20 years old, a **Full-Stack Developer & AI Enthusiast** from India.
 
-<img height="400" width="500" alt="GIF" align="right" src="https://github.com/chill-czar/chill-czar/blob/main/assets/ai-coding.gif">
+<img height="400" width="500" alt="GIF" align="right" src="https://github.com/chill-czar/chill-czar/blob/main/assets/1936.gif">
 
 ### - Learning:
-- ✨ LangChain & LangGraph  
-- ✨ Advanced System Design & Scalable Architectures  
+- ✨ LangChain & LangGraph
+- ✨ Advanced System Design & Scalable Architectures
 
 ### - Hobbies:
-- ✨ Reading  
-- ✨ Watching Anime  
+- ✨ Reading
+- ✨ Watching Anime
 
----
+</br>
+</br>
+</br>
 
 # Languages & Tools 👨‍💻 🛠
+</br>
 
 <p align="center">
 
-<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/typescript.png" alt="TypeScript" width="120" height="50">  
-<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/javascript.png" alt="JavaScript" width="100" height="50">  
-<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/nextjs.png" alt="Next.js" width="100" height="50">  
-<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/react.png" alt="React" width="100" height="50">  
-<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/nodejs.png" alt="Node.js" width="100" height="50">  
-<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/mongodb.png" alt="MongoDB" width="120" height="50">  
-<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/aws.png" alt="AWS" width="150" height="50">  
-<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/langchain.png" alt="LangChain" width="120" height="50">  
-<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/langgraph.png" alt="LangGraph" width="120" height="50">  
-
+<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/python.png" alt="python" width="120" height="50">
+<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/java.png" alt="java"  width="100" height="50">
+<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/ai.png" alt="AI" width="90" height="50">
+<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/bash.png" alt="bash" width="100" height="50">
+<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/datascience.png" alt="datascience" width="180" height="50">
+</br>
+<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/google_cloud_platform.png" alt="google_cloud_platform" width="270" height="50">
+<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/visualstudio_code.png" alt="visualstudio_code" width="240" height="50">
+</br>
+<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/pc.png" alt="pc" width="100" height="50">
+<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/edge.png" alt="edge" width="100" height="50">
+<img src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/playstation@3x.png" alt="playstation" width="150" height="50">
 </p>
+</br>
+</br>
+</br>
 
----
-
-# Featured Projects 🚀
-
-### 🔹 [Collabify](https://github.com/chill-czar/Collabify) – End-to-End Project Management Tool
-- Notion-style workspace with **file management** & Excalidraw integration.  
-- **Real-time collaboration** using Convex & Redux.  
-- **Secure authentication** with Clerk & cloud storage via AWS S3.  
-
-### 🔹 [Streams](https://github.com/chill-czar/streams) – Video Transcoding & Streaming Pipeline
-- Scalable **video processing pipeline** with AWS ECS + SQS.  
-- **HLS adaptive streaming** for multiple resolutions.  
-- Managed **structured S3 storage & metadata**.  
-
-### 🔹 [ExcalidrawAI](https://github.com/chill-czar/ExcalidrawAi) – AI-Powered Diagram Generator
-- **AI-assisted diagramming** using LangChain + Groq.  
-- Automated **flowchart generation from natural language**.  
-- Real-time rendering & collaborative editing via Redux.  
-
----
-
-# Contact Me ✉️  
+# Contact Me ✉️
 
 <p>
-If you want to reach out for **collaboration, projects, or just chat**, ping me anytime 😉.  
+</br>
+If you want to reach out for **collaboration, projects, or just chat**, ping me anytime 😉.
 
 <a href="mailto:aisarthak2@gmail.com">
-  <img align="left" alt="Gmail" width="130" height="100" src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/gmail.png" />
+ <img align="left" alt="Gmail" width="130" height="100" src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/gmail.png" />
 </a>
 <a href="https://www.linkedin.com/in/its-sarthak-chaudhari">
   <img align="left" alt="LinkedIn" width="150" height="100" src="https://github.com/chill-czar/chill-czar/blob/main/assets/icons/linkedin.png" />
@@ -83,12 +72,10 @@ If you want to reach out for **collaboration, projects, or just chat**, ping me 
 </br>
 </br>
 
-<p align="center">  
+<p align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats"> 
 <img src="https://github-readme-stats.vercel.app/api?username=chill-czar&show_icons=true&theme=radical"/>
   </a>
 </p>
 
----
-
-✨ *Always exploring, building, and open to exciting projects!*
+*************
