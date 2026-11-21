@@ -38,7 +38,7 @@ an all-in-one real-time collaboration workspace uniting document editing, intera
 | Metric | Count |
 | :--- | :--- |
 | Merged Upstream PRs | 28 |
-| In-flight Upstream PRs | 18 |
+| In-flight Upstream PRs | 7 |
 | Tracked Ecosystems | Go, Postgres, Linux/KVM, Kubernetes |
 <!--STATS:END-->
 
@@ -59,5 +59,5 @@ if you maintain a go or postgres project and have backlog issues you haven't had
 ---
 
 <sub><!--SYNC:START-->
-Last synced: 2026-11-21 12:52 UTC
+Last synced: 2026-11-21 12:53 UTC
 <!--SYNC:END--></sub>
