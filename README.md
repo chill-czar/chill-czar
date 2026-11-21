@@ -8,11 +8,9 @@ Building isolated agent runtimes, microVM sandboxes, and high-throughput real-ti
 
 ---
 
-## 📌 Open Source Contributions
+## 📌 Pinned Open Source Contributions
 
-> Repositories where I actively contribute and maintain upstream infrastructure, ordered by active engagements.
-
-### 🟢 Active Upstream Engagements
+### 🟢 Active Upstream Contributions
 
 * **[Lima VM](https://github.com/lima-vm/lima)** — *Linux virtual machines on macOS/Linux with container-first runtimes (`containerd`, `nerdctl`, Kubernetes)*
   * **[#5837](https://github.com/lima-vm/lima/pull/5837)** *(In Review)* — `limactl shell`: Reject `--workdir` and `--preserve-env` flags on Windows guests to eliminate silent execution discrepancies.
@@ -28,7 +26,7 @@ Building isolated agent runtimes, microVM sandboxes, and high-throughput real-ti
 
 ---
 
-### 🚀 Merged Infrastructure & Agent Ecosystem Contributions
+### 🚀 Core Infrastructure & Agent Ecosystem Contributions
 
 * **[Google ADK-Go](https://github.com/google/adk-go)** — *Google's official Go Agent Development Kit (5 Merged PRs)*
   * **[#1351](https://github.com/google/adk-go/pull/1351)** *(Merged)* — `cmd/launcher/web`: Initialize telemetry prior to HTTP listener startup, preventing goroutine and socket leaks on context cancellation.
@@ -49,61 +47,3 @@ Building isolated agent runtimes, microVM sandboxes, and high-throughput real-ti
 * **[SuperServe](https://github.com/superserve-ai/superserve)** — *Cloud sandboxes and execution infrastructure for AI agents*
   * **[#332](https://github.com/superserve-ai/superserve/pull/332)** *(Active)* — Added Superserve sandbox execution adapter for the OpenAI Agents SDK.
   * **[#20](https://github.com/superserve-ai/canaries/pull/20)** *(Merged)* — Deployed UI lifecycle canaries across staging and production environments.
-
----
-
-## 🛠️ Featured Systems & Projects
-
-### 1. [Devin](https://github.com/chill-czar/devin) — Autonomous AI Engineering Sandbox
-*An isolated microVM code-execution sandbox and orchestrator runtime for autonomous coding agents.*
-- Built a **Go-based Firecracker runtime** configuring ext4 rootfs, guest kernel, vCPU/RAM quotas, virtio-net, and Unix sockets on bare metal.
-- Implemented an in-guest daemon (`boxd`) communicating with the host over a custom `AF_VSOCK` HTTP transport for commands, code search, and streaming without exposing guest ports.
-- Engineered TAP/iptables networking with MASQUERADE NAT, outbound HTTP CONNECT proxy, process-group termination, and orphan VM sweepers.
-
-### 2. [Collabify](https://collabifyy.com) — Distributed Real-Time Collaboration Workspace
-*A high-concurrency collaborative workspace featuring real-time notes and interactive canvas.*
-- Built collaborative notes and whiteboard canvas with **Yjs CRDTs** over WebSockets and Redis Pub/Sub for deterministic state convergence.
-- Implemented transactional outbox + **Redis Streams** chat pipeline with atomic Lua `INCR+XADD` sequencing and duplicate-write rejection.
-- Engineered a TOCTOU-safe **AWS S3** vault with transactional quota reservations preventing concurrent upload races.  
-*[Live Demo](https://collabifyy.com)* · *[Backend](https://github.com/official-collabify/collabify-server)* · *[Client](https://github.com/official-collabify/client)*
-
-### 3. [Laura Voice](https://github.com/chill-czar/laura-voice) — Real-Time Voice AI Intake Orchestrator
-*An end-to-end conversational voice AI intake system for high-stakes client triage and consultation.*
-- Cascaded voice pipeline: **LiveKit (WebRTC)** audio transport → **Deepgram Nova (STT)** → **OpenRouter LLMs** → **Deepgram Aura (TTS)** with sub-second turn latency.
-- Deterministic 4-agent state machine (**Triage, Intake, Qualification, Scheduling**) where code validates phase boundaries and LLMs execute reasoning.
-- Real-time observability: Server-Sent Events (SSE) stream off a Redis event bus into a Next.js live telemetry console.
-
-### 4. [ApexPerp](https://github.com/chill-czar/apex-perp) — Perpetual Futures Trading Engine
-*A low-latency crypto perpetual futures exchange engine built from scratch in Go.*
-- Hand-written in-memory orderbook matching engine with price-time priority.
-- Event-driven pipeline using **Redis Streams** for durable write ordering and **WebSockets** for real-time depth/trade fanout.
-- Automated PnL and liquidation engine fed by live Binance mark price feeds; 1m/1h/1d continuous aggregates in **TimescaleDB**.
-
----
-
-## 💼 Experience
-
-* **Cartigram** — Full-Stack Developer *(Dec 2025 – Present)*  
-  Engineered multi-source authorization across 8 ERP modules, built a dynamic approval workflow engine, and implemented CRM lead ingestion pipelines.
-* **Sheryians Coding School** — Full-Stack Developer Intern *(Jul 2025 – Oct 2025)*  
-  Built candidate-management APIs, real-time admin dashboards in Next.js, and an automated LangChain-based resume assessment pipeline.
-
----
-
-## ⚡ Technical Stack
-
-* **Systems, Virtualization & Runtimes:** Go, Linux Internals, KVM, Firecracker MicroVMs, `AF_VSOCK`, cgroups v2, Docker, Containerd, Kubernetes, Bash
-* **Agent Infrastructure & Voice AI:** Google ADK-Go, OpenAI Agents SDK, E2B, LiveKit (WebRTC), Deepgram (STT/TTS), LangChain, OpenRouter
-* **Distributed Systems & Storage:** Redis Streams, Pub/Sub, PostgreSQL, TimescaleDB, gRPC, WebSockets, GraphQL Yoga, Hono, BullMQ, Prisma
-* **Cloud & DevOps:** AWS (EC2, S3, SQS), Linux Networking (TAP, iptables, NAT), GitHub Actions CI/CD, Terraform
-* **Frontend & Real-time Web:** React 19, Next.js, TanStack Router/Query, Tailwind CSS, Yjs CRDTs, Vite, TypeScript
-
----
-
-## 📫 Find Me
-
-Portfolio → [itsmesarthak.site](https://www.itsmesarthak.site/)  
-GitHub → [github.com/chill-czar](https://github.com/chill-czar)  
-LinkedIn → [linkedin.com/in/its-sarthak-chaudhari](https://www.linkedin.com/in/its-sarthak-chaudhari/)  
-X / Twitter → [x.com/chill_czar](https://x.com/chill_czar)  
-Email → [aisarthak2@gmail.com](mailto:aisarthak2@gmail.com)
