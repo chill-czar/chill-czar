@@ -4,8 +4,6 @@ backend engineer working with go and postgres. self-taught with no degree; every
 
 [portfolio](https://www.itsmesarthak.site/) | [github](https://github.com/chill-czar) | [linkedin](https://www.linkedin.com/in/its-sarthak-chaudhari/) | [x](https://x.com/chill_czar) | [email](mailto:aisarthak2@gmail.com)
 
----
-
 ## shipped product
 
 ### [collabifyy](https://collabifyy.com)
@@ -13,8 +11,6 @@ backend engineer working with go and postgres. self-taught with no degree; every
 an all-in-one real-time collaboration workspace uniting document editing, interactive canvas, team messaging, issue tracking, and storage into one connected platform. deployed in production at [collabifyy.com](https://collabifyy.com).
 
 [live demo](https://collabifyy.com) | [server repo](https://github.com/official-collabify/collabify-server) | [client repo](https://github.com/official-collabify/client)
-
----
 
 ## where the work goes
 
@@ -30,19 +26,15 @@ an all-in-one real-time collaboration workspace uniting document editing, intera
 | [superserve-ai/superserve](https://github.com/superserve-ai/superserve) | Agent sandboxing platform | Active: [#332](https://github.com/superserve-ai/superserve/pull/332), Merged: [#20](https://github.com/superserve-ai/canaries/pull/20) |
 <!--WORK:END-->
 
----
-
 ## metrics
 
 <!--STATS:START-->
 | Metric | Count |
 | :--- | :--- |
 | Merged Upstream PRs | 28 |
-| In-flight Upstream PRs | 7 |
+| In-flight Upstream PRs | 18 |
 | Tracked Ecosystems | Go, Postgres, Linux/KVM, Kubernetes |
 <!--STATS:END-->
-
----
 
 ## currently reading
 
@@ -50,14 +42,10 @@ an all-in-one real-time collaboration workspace uniting document editing, intera
 - [Writing a very fast cache service with millions of entries in Go](https://allegro.tech/2016/03/writing-fast-cache-service-in-go.html)
 <!--READING:END-->
 
----
-
 ## work on something with me
 
 if you maintain a go or postgres project and have backlog issues you haven't had time to touch, ping me. i'm good for tracing runtime bugs by reading code, fixing leaks and race conditions, and writing internal infra or observability tooling.
 
----
-
 <sub><!--SYNC:START-->
-Last synced: 2026-11-21 12:53 UTC
+Last synced: 2026-11-21 12:54 UTC
 <!--SYNC:END--></sub>
