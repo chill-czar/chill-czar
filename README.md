@@ -13,6 +13,7 @@ backend engineer working with go and postgres. self-taught with no degree; every
 | :--- | :--- | :--- |
 | [lima-vm/lima](https://github.com/lima-vm/lima) | Linux VMs on macOS/Linux, container runtimes | Active: [#5837](https://github.com/lima-vm/lima/pull/5837), [#5834](https://github.com/lima-vm/lima/pull/5834) |
 | [kubevirt/kubevirt](https://github.com/kubevirt/kubevirt) | Kubernetes virtualization API and runtime | Active: [#19982](https://github.com/kubevirt/kubevirt/pull/19982), [#19971](https://github.com/kubevirt/kubevirt/pull/19971) |
+| [argoproj/argo-cd](https://github.com/argoproj/argo-cd) | Declarative GitOps continuous delivery for Kubernetes | Active: [#31132](https://github.com/argoproj/argo-cd/pull/31132), [#31131](https://github.com/argoproj/argo-cd/pull/31131) |
 | [google/adk-go](https://github.com/google/adk-go) | Go Agent Development Kit | 5 merged PRs ([#1470](https://github.com/google/adk-go/pull/1470), [#1353](https://github.com/google/adk-go/pull/1353), [#1351](https://github.com/google/adk-go/pull/1351), [#1349](https://github.com/google/adk-go/pull/1349), [#1320](https://github.com/google/adk-go/pull/1320)) |
 | [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) | CI/CD reliability agent runtime | 5 merged PRs ([#7028](https://github.com/Tracer-Cloud/opensre/pull/7028), [#7025](https://github.com/Tracer-Cloud/opensre/pull/7025), [#7018](https://github.com/Tracer-Cloud/opensre/pull/7018), [#7001](https://github.com/Tracer-Cloud/opensre/pull/7001), [#6997](https://github.com/Tracer-Cloud/opensre/pull/6997)) |
 | [e2b-dev/runtime](https://github.com/e2b-dev/runtime) | MicroVM sandbox code execution | 1 merged PR ([#3419](https://github.com/e2b-dev/runtime/pull/3419)) |
@@ -27,7 +28,7 @@ backend engineer working with go and postgres. self-taught with no degree; every
 | Metric | Count |
 | :--- | :--- |
 | Merged Upstream PRs | 28 |
-| In-flight Upstream PRs | 7 |
+| In-flight Upstream PRs | 18 |
 | Tracked Ecosystems | Go, Postgres, Linux/KVM, Kubernetes |
 <!--STATS:END-->
 
@@ -48,5 +49,5 @@ if you maintain a go or postgres project and have backlog issues you haven't had
 ---
 
 <sub><!--SYNC:START-->
-Last synced: 2026-11-21 12:41 UTC
+Last synced: 2026-11-21 12:49 UTC
 <!--SYNC:END--></sub>
