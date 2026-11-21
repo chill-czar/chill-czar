@@ -12,14 +12,6 @@ backend engineer working with go and postgres. self-taught with no degree; every
 
 an all-in-one real-time collaboration workspace uniting document editing, interactive canvas, team messaging, issue tracking, and storage into one connected platform. deployed in production at [collabifyy.com](https://collabifyy.com).
 
-| Subsystem | Paradigm / Reference | Architecture & Real-Time Sync | Status |
-| :--- | :--- | :--- | :--- |
-| Collaborative Docs | Notion | Block-based editor with Yjs CRDTs over WebSockets for conflict-free multi-cursor convergence | Production |
-| Interactive Canvas | Excalidraw | Infinite whiteboard canvas with peer sync and Redis Pub/Sub state broadcast | Production |
-| Team Messaging | Slack | Channel & DM messaging via Redis Streams transactional outbox with atomic Lua `INCR+XADD` ordering | Production |
-| Issue Tracking | Linear | Structured project boards with live status updates, filtering, and team assignment | Production |
-| Asset Vault | Google Drive | TOCTOU-safe AWS S3 presigned uploads with transactional Postgres quota reservations | Production |
-
 [live demo](https://collabifyy.com) | [server repo](https://github.com/official-collabify/collabify-server) | [client repo](https://github.com/official-collabify/client)
 
 ---
@@ -46,7 +38,7 @@ an all-in-one real-time collaboration workspace uniting document editing, intera
 | Metric | Count |
 | :--- | :--- |
 | Merged Upstream PRs | 28 |
-| In-flight Upstream PRs | 7 |
+| In-flight Upstream PRs | 18 |
 | Tracked Ecosystems | Go, Postgres, Linux/KVM, Kubernetes |
 <!--STATS:END-->
 
@@ -67,5 +59,5 @@ if you maintain a go or postgres project and have backlog issues you haven't had
 ---
 
 <sub><!--SYNC:START-->
-Last synced: 2026-11-21 12:50 UTC
+Last synced: 2026-11-21 12:52 UTC
 <!--SYNC:END--></sub>
