@@ -32,7 +32,7 @@ an all-in-one real-time collaboration workspace uniting document editing, intera
 | Metric | Count |
 | :--- | :--- |
 | Merged Upstream PRs | 28 |
-| In-flight Upstream PRs | 18 |
+| In-flight Upstream PRs | 5 |
 | Tracked Ecosystems | Go, Postgres, Linux/KVM, Kubernetes |
 <!--STATS:END-->
 
@@ -47,5 +47,5 @@ an all-in-one real-time collaboration workspace uniting document editing, intera
 if you maintain a go or postgres project and have backlog issues you haven't had time to touch, ping me. i'm good for tracing runtime bugs by reading code, fixing leaks and race conditions, and writing internal infra or observability tooling.
 
 <sub><!--SYNC:START-->
-Last synced: 2026-11-21 12:54 UTC
+Last synced: 2026-11-22 05:32 UTC
 <!--SYNC:END--></sub>
