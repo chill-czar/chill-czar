@@ -26,6 +26,37 @@ type TrackedRepo struct {
 	FallbackStatus  string
 }
 
+func fetchApprovedOpenPRs(username string) (map[string]map[int]bool, error) {
+	cmd := exec.Command("gh", "search", "prs", "--author", username, "--review", "approved", "--state", "open", "--limit", "50", "--json", "number,repository")
+	var stdout bytes.Buffer
+	cmd.Stdout = &stdout
+	if err := cmd.Run(); err != nil {
+		return nil, err
+	}
+
+	type ApprovedItem struct {
+		Number     int `json:"number"`
+		Repository struct {
+			NameWithOwner string `json:"nameWithOwner"`
+		} `json:"repository"`
+	}
+
+	var items []ApprovedItem
+	if err := json.Unmarshal(stdout.Bytes(), &items); err != nil {
+		return nil, err
+	}
+
+	approvedMap := make(map[string]map[int]bool)
+	for _, item := range items {
+		repo := item.Repository.NameWithOwner
+		if approvedMap[repo] == nil {
+			approvedMap[repo] = make(map[int]bool)
+		}
+		approvedMap[repo][item.Number] = true
+	}
+	return approvedMap, nil
+}
+
 func fetchRepoPRs(username, repo string) ([]PRItem, error) {
 	cmd := exec.Command("gh", "search", "prs", "--author", username, "--repo", repo, "--limit", "50", "--json", "number,state,url")
 	var stdout bytes.Buffer
@@ -43,8 +74,8 @@ func fetchRepoPRs(username, repo string) ([]PRItem, error) {
 	return items, nil
 }
 
-func formatRepoStatus(merged, open []PRItem) string {
-	if len(merged) == 0 && len(open) == 0 {
+func formatRepoStatus(merged, approved, open []PRItem) string {
+	if len(merged) == 0 && len(approved) == 0 && len(open) == 0 {
 		return "Up to date"
 	}
 
@@ -65,6 +96,17 @@ func formatRepoStatus(merged, open []PRItem) string {
 		}
 	}
 
+	if len(approved) > 0 {
+		sort.Slice(approved, func(i, j int) bool {
+			return approved[i].Number > approved[j].Number
+		})
+		var links []string
+		for _, pr := range approved {
+			links = append(links, fmt.Sprintf("[#%d](%s)", pr.Number, pr.URL))
+		}
+		parts = append(parts, fmt.Sprintf("Approved: %s", strings.Join(links, ", ")))
+	}
+
 	if len(open) > 0 {
 		sort.Slice(open, func(i, j int) bool {
 			return open[i].Number > open[j].Number
@@ -79,12 +121,15 @@ func formatRepoStatus(merged, open []PRItem) string {
 	return strings.Join(parts, ", ")
 }
 
-func buildWorkTable(username string, repos []TrackedRepo) (string, int, int) {
+func buildWorkTable(username string, repos []TrackedRepo) (string, int, int, int) {
 	var sb strings.Builder
 	sb.WriteString("| Repository | Focus | Upstream Status |\n")
 	sb.WriteString("| :--- | :--- | :--- |\n")
 
+	approvedMap, _ := fetchApprovedOpenPRs(username)
+
 	totalTrackedOpen := 0
+	totalTrackedApproved := 0
 	totalTrackedMerged := 0
 
 	for _, tr := range repos {
@@ -103,18 +148,27 @@ func buildWorkTable(username string, repos []TrackedRepo) (string, int, int) {
 		var status string
 		if len(allPRs) > 0 {
 			var merged []PRItem
+			var approved []PRItem
 			var open []PRItem
+
+			repoApproved := approvedMap[tr.Repo]
 			for _, item := range allPRs {
 				st := strings.ToLower(item.State)
 				if st == "merged" {
 					merged = append(merged, item)
 				} else if st == "open" {
-					open = append(open, item)
+					if repoApproved != nil && repoApproved[item.Number] {
+						approved = append(approved, item)
+					} else {
+						open = append(open, item)
+					}
 				}
 			}
+
 			totalTrackedMerged += len(merged)
+			totalTrackedApproved += len(approved)
 			totalTrackedOpen += len(open)
-			status = formatRepoStatus(merged, open)
+			status = formatRepoStatus(merged, approved, open)
 		} else {
 			status = tr.FallbackStatus
 		}
@@ -123,23 +177,25 @@ func buildWorkTable(username string, repos []TrackedRepo) (string, int, int) {
 		sb.WriteString(fmt.Sprintf("| [%s](%s) | %s | %s |\n", tr.Repo, repoURL, tr.Focus, status))
 	}
 
-	return strings.TrimSpace(sb.String()), totalTrackedOpen, totalTrackedMerged
+	return strings.TrimSpace(sb.String()), totalTrackedOpen, totalTrackedApproved, totalTrackedMerged
 }
 
-func getPRCounts(trackedOpen, trackedMerged int) (openCount int, mergedCount int) {
+func getPRCounts(trackedOpen, trackedApproved, trackedMerged int) (openCount, approvedCount, mergedCount int) {
 	if trackedMerged > 0 {
 		mergedCount = trackedMerged
 	} else {
-		mergedCount = 14 // fallback verified open-source merged PRs
+		mergedCount = 15 // fallback verified open-source merged PRs
 	}
+
+	approvedCount = trackedApproved
 
 	if trackedOpen > 0 {
 		openCount = trackedOpen
 	} else {
-		openCount = 5 // fallback verified open-source in-flight PRs
+		openCount = 24 // fallback verified open-source in-flight PRs
 	}
 
-	return openCount, mergedCount
+	return openCount, approvedCount, mergedCount
 }
 
 func replaceSection(content, startMarker, endMarker, replacement string) (string, error) {
@@ -216,17 +272,17 @@ func main() {
 		{
 			Repo:           "lima-vm/lima",
 			Focus:          "Linux VMs on macOS/Linux, container runtimes",
-			FallbackStatus: "1 merged PR ([#5837](https://github.com/lima-vm/lima/pull/5837)), Active: [#5834](https://github.com/lima-vm/lima/pull/5834)",
+			FallbackStatus: "1 merged PR ([#5837](https://github.com/lima-vm/lima/pull/5837)), Active: [#5858](https://github.com/lima-vm/lima/pull/5858), [#5857](https://github.com/lima-vm/lima/pull/5857), [#5856](https://github.com/lima-vm/lima/pull/5856), [#5855](https://github.com/lima-vm/lima/pull/5855), [#5854](https://github.com/lima-vm/lima/pull/5854), [#5853](https://github.com/lima-vm/lima/pull/5853), [#5852](https://github.com/lima-vm/lima/pull/5852), [#5851](https://github.com/lima-vm/lima/pull/5851), [#5850](https://github.com/lima-vm/lima/pull/5850), [#5840](https://github.com/lima-vm/lima/pull/5840), [#5839](https://github.com/lima-vm/lima/pull/5839), [#5834](https://github.com/lima-vm/lima/pull/5834)",
 		},
 		{
 			Repo:           "kubevirt/kubevirt",
 			Focus:          "Kubernetes virtualization API and runtime",
-			FallbackStatus: "Active: [#19982](https://github.com/kubevirt/kubevirt/pull/19982), [#19971](https://github.com/kubevirt/kubevirt/pull/19971)",
+			FallbackStatus: "Active: [#20028](https://github.com/kubevirt/kubevirt/pull/20028), [#20006](https://github.com/kubevirt/kubevirt/pull/20006), [#19982](https://github.com/kubevirt/kubevirt/pull/19982), [#19971](https://github.com/kubevirt/kubevirt/pull/19971)",
 		},
 		{
 			Repo:           "argoproj/argo-cd",
 			Focus:          "Declarative GitOps continuous delivery for Kubernetes",
-			FallbackStatus: "1 merged PR ([#31132](https://github.com/argoproj/argo-cd/pull/31132)), Active: [#31131](https://github.com/argoproj/argo-cd/pull/31131)",
+			FallbackStatus: "2 merged PRs ([#31191](https://github.com/argoproj/argo-cd/pull/31191), [#31132](https://github.com/argoproj/argo-cd/pull/31132)), Active: [#31192](https://github.com/argoproj/argo-cd/pull/31192), [#31190](https://github.com/argoproj/argo-cd/pull/31190), [#31155](https://github.com/argoproj/argo-cd/pull/31155), [#31154](https://github.com/argoproj/argo-cd/pull/31154), [#31153](https://github.com/argoproj/argo-cd/pull/31153), [#31150](https://github.com/argoproj/argo-cd/pull/31150), [#31131](https://github.com/argoproj/argo-cd/pull/31131)",
 		},
 		{
 			Repo:           "google/adk-go",
@@ -252,7 +308,7 @@ func main() {
 	}
 
 	// 1. Where the work goes table (dynamic query of open-source projects)
-	workBlock, trackedOpen, trackedMerged := buildWorkTable(username, trackedRepos)
+	workBlock, trackedOpen, trackedApproved, trackedMerged := buildWorkTable(username, trackedRepos)
 	content, err = replaceSection(content, "<!--WORK:START-->", "<!--WORK:END-->", workBlock)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "error updating work table: %v\n", err)
@@ -260,8 +316,16 @@ func main() {
 	}
 
 	// 2. Stats block (strictly open-source upstream contributions)
-	openPRs, mergedPRs := getPRCounts(trackedOpen, trackedMerged)
-	statsBlock := fmt.Sprintf("| Metric | Count |\n| :--- | :--- |\n| Merged Upstream PRs | %d |\n| In-flight Upstream PRs | %d |\n| Tracked Ecosystems | Go, Postgres, Linux/KVM, Kubernetes |", mergedPRs, openPRs)
+	openPRs, approvedPRs, mergedPRs := getPRCounts(trackedOpen, trackedApproved, trackedMerged)
+	var statsRows []string
+	statsRows = append(statsRows, fmt.Sprintf("| Merged Upstream PRs | %d |", mergedPRs))
+	if approvedPRs > 0 {
+		statsRows = append(statsRows, fmt.Sprintf("| Approved Upstream PRs | %d |", approvedPRs))
+	}
+	statsRows = append(statsRows, fmt.Sprintf("| In-flight Upstream PRs | %d |", openPRs))
+	statsRows = append(statsRows, "| Tracked Ecosystems | Go, Postgres, Linux/KVM, Kubernetes |")
+
+	statsBlock := "| Metric | Count |\n| :--- | :--- |\n" + strings.Join(statsRows, "\n")
 	content, err = replaceSection(content, "<!--STATS:START-->", "<!--STATS:END-->", statsBlock)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "error updating stats: %v\n", err)
@@ -296,5 +360,5 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("Successfully updated %s for %s (Merged: %d, Open: %d)\n", readmePath, username, mergedPRs, openPRs)
+	fmt.Printf("Successfully updated %s for %s (Merged: %d, Approved: %d, Open: %d)\n", readmePath, username, mergedPRs, approvedPRs, openPRs)
 }
