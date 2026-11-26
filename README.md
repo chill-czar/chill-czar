@@ -45,7 +45,7 @@ an all-in-one real-time collaboration workspace uniting document editing, intera
 
 ## work on something with me
 
-if you maintain a go or postgres project and have backlog issues you haven't had time to touch, ping me. i'm good for tracing runtime bugs by reading code, fixing leaks and race conditions, and writing internal infra or observability tooling.
+if you maintain a go project and have backlog issues you haven't had time to touch, ping me. i'm good for tracing runtime bugs by reading code, fixing leaks and race conditions, and writing internal infra or observability tooling.
 
 <sub><!--SYNC:START-->
 Last synced: 2026-11-26 13:38 UTC
