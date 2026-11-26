@@ -34,7 +34,7 @@ an all-in-one real-time collaboration workspace uniting document editing, intera
 | Merged Upstream PRs | 20 |
 | Approved Upstream PRs | 1 |
 | In-flight Upstream PRs | 24 |
-| Tracked Ecosystems | Go, Postgres, Linux/KVM, Kubernetes |
+| Tracked Ecosystems | GoLang |
 <!--STATS:END-->
 
 ## currently reading
